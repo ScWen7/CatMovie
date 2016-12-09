@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+   <LinearLayout
+       android:layout_marginTop="15dp"
+       android:layout_width="match_parent"
+       android:orientation="horizontal"
+       android:padding="10dp"
+       android:layout_height="wrap_content">
+       <TextView
+           android:id="@+id/tv_created"
+           android:layout_marginLeft="5dp"
+           android:layout_width="wrap_content"
+           android:textColor="@color/orange"
+           android:text="2016-11-28"
+           android:layout_height="wrap_content" />
+       <TextView
+           android:layout_width="wrap_content"
+           android:text="更新"
+           android:layout_marginLeft="3dp"
+           android:layout_height="wrap_content" />
+   </LinearLayout>
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="match_parent"
+        android:padding="8dp"
+        android:lineSpacingExtra="3dp"
+        android:text="《每日热映口碑榜》——将昨日国内热映的影片，按照评分从高到低排列，取前10名，每天上午10点更新，相关数据来源于“猫眼专业版”及“猫眼电影库”。"
+        android:layout_height="wrap_content" />
+</LinearLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_prize"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/tv_region"
+        android:layout_width="match_parent"
+        android:text="热门"
+        android:padding="15dp"
+        android:textSize="15dp"
+        android:textColor="#333"
+        android:background="#55e1e1e1"
+        android:layout_height="wrap_content" />
+    <View
+        android:layout_width="match_parent"
+        android:background="#55333333"
+        android:layout_height="1dp"/>
+    <com.atguigu.cateyesmovie.view.MyGridView
+        android:id="@+id/gridview"
+        android:numColumns="2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

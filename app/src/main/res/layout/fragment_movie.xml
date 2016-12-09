@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tl="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/red"
+        android:layout_height="50dp">
+        <LinearLayout
+            android:id="@+id/ll_chose_city"
+            android:layout_width="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:clickable="true"
+            android:layout_height="wrap_content">
+            <!--<TextView-->
+                <!--android:id="@+id/tv_city"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:text="北京"-->
+                <!--android:textSize="15dp"-->
+                <!--android:textColor="#ffffff"-->
+                <!--android:layout_height="wrap_content" />-->
+            <!--<ImageView-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:layout_width="18dp"-->
+                <!--android:layout_marginLeft="3dp"-->
+                <!--android:src="@drawable/show_city01"-->
+                <!--android:layout_height="18dp" />-->
+            <Button
+                android:layout_width="60dp"
+                android:background="@android:color/transparent"
+                android:text="北京"
+                android:id="@+id/btn_choose"
+                android:textSize="15dp"
+                android:textColor="#ffffff"
+                android:drawableRight="@drawable/w7"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <com.flyco.tablayout.SegmentTabLayout
+            android:id="@+id/tab_movie"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+           android:layout_centerInParent="true"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            tl:tl_indicator_corner_radius="8dp"
+            tl:tl_indicator_anim_enable="true"
+            tl:tl_indicator_bounce_enable="false"
+            tl:tl_indicator_color="#ffffff"
+            tl:tl_textSelectColor="#b61f1b"
+            tl:tl_textUnselectColor="#ffffff"
+            tl:tl_indicator_margin_bottom="2dp"
+            tl:tl_indicator_margin_left="2dp"
+            tl:tl_indicator_margin_right="2dp"
+            tl:tl_indicator_margin_top="2dp"
+            tl:tl_bar_color="#b61f1b"
+            tl:tl_bar_stroke_width="0dp"
+            tl:tl_tab_padding="20dp"/>
+        <ImageView
+            android:id="@+id/iv_search"
+            android:layout_marginLeft="10dp"
+            android:layout_width="25dp"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:visibility="gone"
+            android:src="@drawable/a1z"
+            android:layout_height="25dp" />
+    </RelativeLayout>
+</LinearLayout>

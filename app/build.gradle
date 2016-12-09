@@ -1,0 +1,47 @@
+apply plugin: 'com.android.application'  //声明，构建的是application
+//设置编译android项目的参数
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.1"
+    aaptOptions.cruncherEnabled = false
+    aaptOptions.useNewCruncher = false
+    //应用的默认配置
+    defaultConfig {
+        applicationId "com.atguigu.cateyesmovie"
+        minSdkVersion 19
+        targetSdkVersion 22
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    //混淆设置
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+//依赖库
+dependencies {
+    //libs下的 jar全部依赖
+    provided fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    testCompile 'junit:junit:4.12'
+    //全部依赖
+    compile 'com.android.support:appcompat-v7:23.4.0'
+    compile 'com.jakewharton:butterknife:7.0.1'
+    compile 'com.android.support:recyclerview-v7:23.4.0'
+    compile project(':okhttputils')
+    compile files('libs/glide-3.7.0.jar')
+    compile files('libs/gson-2.1.jar')
+    compile project(':FlycoTabLayout_Lib')
+    compile 'com.youth.banner:banner:1.4.2'
+    compile files('libs/AMap_Location_V3.1.0_20161027.jar')
+    compile project(':MaterialRefreshLayout_library')
+    compile 'com.android.support:design:23.4.0'
+    compile 'com.alibaba:fastjson:1.2.21'
+    compile 'com.zhy:flowlayout-lib:1.0.3'
+}

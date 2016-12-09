@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <com.atguigu.cateyesmovie.view.HorizontalListlView
+        android:id="@+id/ho_list_cat"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="10dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/gray"
+        android:layout_height="0.5dp"/>
+    <com.atguigu.cateyesmovie.view.HorizontalListlView
+        android:id="@+id/ho_list_source"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="10dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/gray"
+        android:layout_height="0.5dp"/>
+    <com.atguigu.cateyesmovie.view.HorizontalListlView
+
+        android:id="@+id/ho_list_year"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="10dp" />
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/gray"
+        android:layout_height="0.5dp"/>
+    <com.atguigu.cateyesmovie.view.HorizontalListlView
+
+        android:id="@+id/ho_list_ping"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="10dp" />
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/gray"
+        android:layout_height="8dp"/>
+</LinearLayout>

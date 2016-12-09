@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_movies_detail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+   >
+
+    <WebView
+        android:id="@+id/webView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </WebView>
+    <FrameLayout
+        android:visibility="gone"
+        android:id="@+id/loading"
+        android:layout_width="match_parent"
+        android:background="#ffffff"
+        android:layout_height="match_parent">
+        <FrameLayout
+            android:layout_gravity="center"
+            android:layout_width="40dp"
+            android:layout_height="40dp">
+            <ProgressBar
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                style="?android:progressBarStyleInverse"
+                android:indeterminateDuration="1200"
+                android:indeterminateDrawable="@anim/loading"
+                />
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_width="30dp"
+                android:background="@drawable/a__"
+                android:layout_height="30dp" />
+        </FrameLayout>
+    </FrameLayout>
+
+</FrameLayout>

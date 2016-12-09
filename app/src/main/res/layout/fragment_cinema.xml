@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tl="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/red">
+
+        <LinearLayout
+            android:id="@+id/ll_chose_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:clickable="true">
+            <!--<TextView-->
+            <!--android:id="@+id/tv_city"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:text="北京"-->
+            <!--android:textSize="15dp"-->
+            <!--android:textColor="#ffffff"-->
+            <!--android:layout_height="wrap_content" />-->
+            <!--<ImageView-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_width="18dp"-->
+            <!--android:layout_marginLeft="3dp"-->
+            <!--android:src="@drawable/show_city01"-->
+            <!--android:layout_height="18dp" />-->
+            <Button
+                android:id="@+id/btn_choose"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:drawableRight="@drawable/w7"
+                android:text="北京"
+                android:textColor="#ffffff"
+                android:textSize="15dp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="影院"
+            android:textColor="#fff"
+            android:textSize="18dp" />
+
+        <ImageView
+            android:id="@+id/iv_search"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/a1z"
+            android:visibility="visible" />
+    </RelativeLayout>
+</LinearLayout>

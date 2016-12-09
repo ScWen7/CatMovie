@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="110dp"
+    android:padding="10dp"
+    >
+    <FrameLayout
+        android:id="@+id/frm"
+        android:layout_width="120dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_height="90dp">
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="120dp"
+            android:layout_height="90dp"
+            />
+        <ImageView
+            android:layout_margin="5dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="bottom|end"
+            android:src="@drawable/a30"/>
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/frm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:text="《长城》景甜幕后特辑，疯狂集训换来鹤军女将军"
+            android:textSize="17dp"
+            android:textColor="#333"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_nickname"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="独家专访"
+                android:textSize="12dp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_viewcount"
+                android:layout_width="wrap_content"
+                android:text="3361"
+                android:drawablePadding="3dp"
+                android:drawableLeft="@drawable/a5y"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_comment_top"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:text="26"
+                android:drawablePadding="3dp"
+                android:drawableLeft="@drawable/a_k"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

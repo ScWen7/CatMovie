@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="5dp"
+    android:paddingTop="5dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <FrameLayout
+            android:layout_width="80dp"
+            android:layout_height="110dp"
+            android:layout_centerVertical="true">
+
+            <ImageView
+                android:id="@+id/iv_movie_icon"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:src="@drawable/background_icon01" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/tv_nm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="聊斋新编之画皮新娘"
+
+                    android:textColor="#333"
+                    android:textSize="15dp" />
+
+                <!--<ImageView-->
+                <!--android:layout_marginLeft="6dp"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:background="@drawable/w1"-->
+                <!--android:layout_height="wrap_content" />-->
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_enm"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:text="The Croods"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tv_cat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:text="航海家后代，征程向大海" />
+
+            <TextView
+                android:id="@+id/tv_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="今天162家影院放映962场" />
+        </LinearLayout>
+
+        <!--<TextView-->
+        <!--android:id="@+id/buy_ticket"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:layout_marginRight="5dp"-->
+        <!--android:background="@drawable/tv_buy_selector"-->
+        <!--android:paddingBottom="5dp"-->
+        <!--android:paddingLeft="15dp"-->
+        <!--android:paddingRight="15dp"-->
+        <!--android:paddingTop="5dp"-->
+        <!--android:text="想看"-->
+        <!--android:textColor="@drawable/tv_buy_color_selector" />-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="5dp"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center_vertical|end"
+                android:layout_marginRight="5dp"
+                android:layout_height="30dp">
+                <TextView
+                    android:id="@+id/tv_score"
+                    android:layout_width="wrap_content"
+                    android:text="9.6"
+                    android:textColor="@color/orange"
+                    android:textSize="20dp"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="分"
+                    android:layout_alignParentRight="true"
+                    android:textColor="@color/orange"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:background="#e1e1e1" />
+</LinearLayout>

@@ -1,0 +1,26 @@
+<LinearLayout android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:background="@color/red"
+    android:layout_height="50dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView
+        android:id="@+id/ic_back"
+        android:layout_marginLeft="10dp"
+        android:layout_width="30dp"
+        android:src="@drawable/ms"
+        android:layout_height="30dp" />
+    <View
+        android:layout_marginLeft="10dp"
+        android:layout_width="0.5dp"
+        android:background="#9333"
+        android:layout_height="25dp"/>
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:text="全球电影奖项"
+        android:textSize="20dp"
+        android:textColor="#fff"
+        android:layout_height="wrap_content" />
+</LinearLayout>

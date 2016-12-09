@@ -1,0 +1,14 @@
+<LinearLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:orientation="vertical"
+android:gravity="center"
+android:layout_height="wrap_content"
+    >
+
+<com.youth.banner.Banner android:id="@+id/banner_hot"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    />
+    <!--<include layout="@layout/select_title"/>-->
+</LinearLayout>
